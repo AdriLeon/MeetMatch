@@ -1,0 +1,92 @@
+/* Estilos comunes para todas las resoluciones */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #555;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-toggle {
+    display: none; /* Oculta el botón de hamburguesa en pantallas grandes */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia la parte inferior de la columna flexible */
+}
+
+/* Estilos específicos para tablets 720p y celulares 480p */
+@media (max-width: 720px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #a31a1a;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #555;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+}
