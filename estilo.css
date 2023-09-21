@@ -6,38 +6,47 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(#252273, #4A8C2B);
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 5px;
+    background-color: #58A633;
+    padding: 10px 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
+    color: white;
     display: flex;
-    justify-content: space-around;
-    background-color: #555;
-    padding: 10px 0;
+    text-align: right;
     width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 20; /* Ajusta el padding para eliminar el espacio en los márgenes */
+    margin: 12; /* Ajusta el margen para eliminar el espacio en los márgenes */
+    flex: 1;
 }
 
 nav li {
     display: inline;
-    margin: 0 15px;
+    margin: 0;
 }
 
 .menu-toggle {
-    display: none; /* Oculta el botón de hamburguesa en pantallas grandes */
+    display: none;
 }
 
 .main-content {
@@ -46,12 +55,9 @@ nav li {
     width: 100%;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    margin-top: auto; /* Empuja el footer hacia la parte inferior de la columna flexible */
+.titulo1 {
+    flex: 0;
+    padding: 4px;
 }
 
 /* Estilos específicos para tablets 720p y celulares 480p */
@@ -60,6 +66,7 @@ footer {
         display: block;
         cursor: pointer;
         padding: 10px;
+        border: 1px solid blue;
     }
 
     .bar {
@@ -89,4 +96,67 @@ footer {
     .nav-links.active li {
         margin: 10px 0;
     }
+
+    .titulo {
+        flex: 1;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .titulo1 {
+        display: none;
+    }
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-container {
+    width: 300px;
+    margin: 20px auto; /* Agrega margen superior e inferior para separar el formulario del contenido */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
