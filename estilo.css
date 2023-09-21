@@ -60,6 +60,10 @@ nav li {
     padding: 4px;
 }
 
+.titulo {
+    display: none;
+}
+
 /* Estilos específicos para tablets 720p y celulares 480p */
 @media (max-width: 720px) {
     .menu-toggle {
@@ -98,9 +102,12 @@ nav li {
     }
 
     .titulo {
-        flex: 1;
         padding: 5px;
         margin: 0;
+        color: white;
+        align-items: center;
+        border: 1px solid blue;
+        flex: 3;
     }
 
     .titulo1 {
@@ -160,3 +167,5 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+
