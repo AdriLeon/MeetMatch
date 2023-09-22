@@ -1,67 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cards Hover2</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="/static/css/inicio.css" />
-      </head>
-      
-      <body>
-        <div class="container">
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                  <img src="/static/img/pexels-michelle-leman-6774998.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>
-                  <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
-                </h3>
-                <p>This is where I network and build my professional protfolio.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                  <img src="/static/img/pexels-cottonbro-studio-5018220.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>
-                  <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
-                </h3>
-                <p>This is where I read news and network with different social groups.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                  <img src="/static/img/pexels-cottonbro-studio-4982166.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>
-                  <a href="https://github.com/atom888" target="_blank">atom888</a>
-                </h3>
-                <p>This is where I share code and work on projects.</p>
-              </div>
-            </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cards Hover2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/css/inicio.css" />
+  <link rel="stylesheet" href="/estilo.css">
+</head>
+
+<body>
+  <header>
+        <div class="menu-toggle" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+
+        </div>
+
+        <h1 class="titulo">Meetmatch</h1>
+
+        <nav>
+
+            <h1 class="titulo1">Meetmatch</h1>
+
+            <ul class="nav-links">
+
+                <li><a href="#">Meet</a></li>
+                <li><a href="#">Chats</a></li>
+                <li><a href="#">Editar perfil</a></li>
+                <li><a href="inicio de sesion.html">Cerrar sesión</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+   <!--Tarjetas de los Perfiles--> 
+   
+  <div class="container">
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-michelle-leman-6774871.jpg" alt="">
           </div>
         </div>
-      </body>
-      
-      </html>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            Michelle
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-cottonbro-studio-5018220.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            <a href="https://twitter.com/AdamDipinto" target="_blank">AdamDipinto</a>
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-cottonbro-studio-4982166.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            <a href="https://github.com/atom888" target="_blank">atom888</a>
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-michelle-leman-6774998.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-cottonbro-studio-5018220.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-cottonbro-studio-4982166.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            <a href="https://github.com/atom888" target="_blank">atom888</a>
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-michelle-leman-6774998.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-cottonbro-studio-5018220.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <div class="icon">
+            <img class="profile" src="/static/img/pexels-cottonbro-studio-4982166.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3>
+            <a href="https://github.com/atom888" target="_blank">atom888</a>
+          </h3>
+          <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
+          <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
+          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
