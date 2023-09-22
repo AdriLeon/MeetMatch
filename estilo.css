@@ -11,6 +11,21 @@ body {
     background: linear-gradient(#252273, #4A8C2B);
 }
 
+.fondo{
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('C:/Users/jonlp/OneDrive/Documentos/Decimo/PWA/Meetmatch/MeetMatch/meet.jpeg'); /* Reemplaza 'ruta/a/tu/imagen_de_fondo.jpg' con la ruta correcta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+
+}
+
 header {
     background-color: #58A633;
     padding: 10px 0;
@@ -63,6 +78,10 @@ nav li {
 .titulo {
     display: none;
 }
+.formulario_titulo{
+    color: white;
+
+}
 
 /* Estilos específicos para tablets 720p y celulares 480p */
 @media (max-width: 720px) {
@@ -76,7 +95,7 @@ nav li {
     .bar {
         width: 30px;
         height: 3px;
-        background-color: #a31a1a;
+        background-color: white;
         margin: 6px 0;
         transition: 0.4s;
     }
@@ -91,7 +110,7 @@ nav li {
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: #555;
+        background-color: #252273;
         width: 100%;
         text-align: center;
         z-index: 1;
@@ -145,7 +164,7 @@ label {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],input[type="number"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -156,7 +175,7 @@ input[type="password"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #252273;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -165,7 +184,17 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #4a478d;
 }
 
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+#imagenPrevia {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: none; /* La imagen se muestra solo cuando se selecciona un archivo */
+}
 
