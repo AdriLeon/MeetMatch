@@ -1,0 +1,200 @@
+/* Estilos comunes para todas las resoluciones */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(#252273, #4A8C2B);
+}
+
+.fondo{
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('C:/Users/jonlp/OneDrive/Documentos/Decimo/PWA/Meetmatch/MeetMatch/meet.jpeg'); /* Reemplaza 'ruta/a/tu/imagen_de_fondo.jpg' con la ruta correcta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+
+}
+
+header {
+    background-color: #58A633;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    color: white;
+    display: flex;
+    text-align: right;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20; /* Ajusta el padding para eliminar el espacio en los márgenes */
+    margin: 12; /* Ajusta el margen para eliminar el espacio en los márgenes */
+    flex: 1;
+}
+
+nav li {
+    display: inline;
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+}
+
+.titulo1 {
+    flex: 0;
+    padding: 4px;
+}
+
+.titulo {
+    display: none;
+}
+.formulario_titulo{
+    color: white;
+
+}
+
+/* Estilos específicos para tablets 720p y celulares 480p */
+@media (max-width: 720px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid blue;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #252273;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+
+    .titulo {
+        padding: 5px;
+        margin: 0;
+        color: white;
+        align-items: center;
+        border: 1px solid blue;
+        flex: 3;
+    }
+
+    .titulo1 {
+        display: none;
+    }
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-container {
+    width: 300px;
+    margin: 20px auto; /* Agrega margen superior e inferior para separar el formulario del contenido */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #252273;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a478d;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+#imagenPrevia {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: none; /* La imagen se muestra solo cuando se selecciona un archivo */
+}
+
