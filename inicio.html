@@ -9,34 +9,23 @@
 
 <body>
     <header>
-        <div class="menu-toggle" id="menuToggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-
-        </div>
-
-        <h1 class="titulo">Meetmatch</h1>
-
         <nav>
-
-            <h1 class="titulo1">Meetmatch</h1>
-
-            <ul class="nav-links">
-
+            <div class="wrapper">
+              <div class="logo"><a href="#">MeetMatch</a></div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links">
+                <label for="close-btn" class="bt close-btn">&times;</label>
                 <li><a href="#">Meet</a></li>
                 <li><a href="#">Chats</a></li>
                 <li><a href="#">Editar perfil</a></li>
-                <li><a href="inicio de sesion.html">Cerrar sesión</a></li>
-
-            </ul>
-        </nav>
-
-
+                <li><a href="#">Cerrar sesión</a></li>
+              </ul>
+              <label for="menu-btn" class="bt menu-btn">&#8801;</label>
+            </div>
+          </nav>
     </header>
 
-    <!-- Resto del contenido -->
-    <script src="menu.js"></script>
 
 </body>
 
