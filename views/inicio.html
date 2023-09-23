@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Cards Hover2</title>
+  <title>Meetmatch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="/static/css/inicio.css" />
   <link rel="stylesheet" href="/estilo.css">
@@ -13,32 +13,25 @@
 
 <body>
   <header>
-        <div class="menu-toggle" id="menuToggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">MeetMatch</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="bt close-btn">&times;</label>
+            <li><a href="#">Meet</a></li>
+            <li><a href="#">Chats</a></li>
+            <li><a href="#">Editar perfil</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+          </ul>
+          <label for="menu-btn" class="bt menu-btn">&#8801;</label>
         </div>
+      </nav>
+</header>
 
-        <h1 class="titulo">Meetmatch</h1>
+  <!--Tarjetas de los Perfiles-->
 
-        <nav>
-
-            <h1 class="titulo1">Meetmatch</h1>
-
-            <ul class="nav-links">
-
-                <li><a href="#">Meet</a></li>
-                <li><a href="#">Chats</a></li>
-                <li><a href="#">Editar perfil</a></li>
-                <li><a href="inicio de sesion.html">Cerrar sesión</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-   <!--Tarjetas de los Perfiles--> 
-   
   <div class="container">
     <div class="card">
       <div class="face face1">
@@ -55,7 +48,8 @@
           </h3>
           <button class="button button3"><img id="icon" src="/static/img/me-gusta.png" alt=""></button>
           <button class="button"><img src="/static/img/charla.png" alt="" id="icon"></button>
-          <button class="button button2"><img src="/static/img/boton-de-informacion.png" alt="" id="icon"></button>
+          <button class="button button2" id="myBtn"><img src="/static/img/boton-de-informacion.png" alt=""
+              id="icon"></button>
         </div>
       </div>
     </div>
@@ -212,6 +206,61 @@
       </div>
     </div>
   </div>
+
+  <!--Modal-->
+  <div id="myModal" class="modal">
+    <!--Contenido del Modal-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h4>Mas información de:</h4>
+      </div>
+      <div class="modal-body">
+        <!--Slideshow-->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="/static/img/pexels-michelle-leman-6774871.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="/static/img/pexels-michelle-leman-6774343.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="/static/img/pexels-michelle-leman-6774998.jpg" style="width:100%">
+          </div>
+          <a onclick="plusSlides(-1)" class="prev">&#10094</a>
+          <a onclick="plusSlides(1)" class="next">&#10095</a>
+        </div>
+        <br>
+        <div>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <h2>Michelle</h2>
+        <h3>21 años.</h3>
+        <div class="description">
+          Hola, soy Michelle, una estudiante universitaria apasionada por la tecnología y la creatividad. Siempre
+          curiosa y lista para aprender algo nuevo. Fuera de mis estudios, disfruto explorar música y arte. Estoy aquí
+          para ayudar en lo que necesites.
+        </div>
+        <div class="hobbies">
+          <h3>Hobbies</h3>
+          <button class="btn" disabled="disabled"><img src="/static/img/diseno.png" alt="" id="icon">Diseño</button>
+          <button class="btn" disabled="disabled"><img src="/static/img/ping-pong.png" alt="" id="icon">Ping
+            Pong</button>
+          <button class="btn" disabled="disabled"><img src="/static/img/rompecabezas.png" alt="" id="icon">Juegos
+            Logicos</button>
+          <button class="btn" disabled="disabled"><img src="/static/img/sewing.png" alt="" id="icon">Costura</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JS -->
+  <script src="/static/js/modal.js"></script>
+  <script src="/static/js/slideshow.js"></script>
 </body>
 
 </html>
