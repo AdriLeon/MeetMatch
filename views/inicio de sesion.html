@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Meetmatch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/estilo.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">MeetMatch</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="bt close-btn">&times;</label>
+            <li><a href="#">Inicio</a></li>
+          </ul>
+          <label for="menu-btn" class="bt menu-btn">&#8801;</label>
+        </div>
+      </nav>
+</header>
+
+  <!--Tarjetas de los Perfiles-->
+  
+   <!-- Contenido principal de la página -->
+   <h1 class="formulario_titulo">Iniciar sesión</h1>
+
+   <div class="login-container">
+      <form id="login-form">
+          <div class="form-group">
+              <label for="username">Usuario:</label>
+              <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit">Iniciar Sesión</button>
+           <br>
+           <br>
+          <a href="registro.html">Registrarse</a>
+      </form>
+
+          
+
+  <script src="/static/js/modal.js"></script>
+</body>
+
+</html>

@@ -6,6 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
 body {
     align-items: center;
     text-align: center;
@@ -224,3 +225,163 @@ nav .wrapper{
 nav input{
   display: none;
 }
+
+/* Estilos para el formulario de inicio de sesión */
+.formulario_titulo{
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Estilos para el formulario de registro */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container  .form-group {
+  margin-bottom: 15px;
+}
+
+.login-container  .form-group label  {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block; /* Para que las etiquetas se muestren en una línea separada */
+}
+
+.login-container .form-group input[type="text"],
+.login-container  .form-group input[type="password"]
+ {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container  button[type="submit"] {
+  background: #58A633;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.login-container  button[type="submit"]:hover {
+  background: #4A8C2B;
+}
+
+.login-container  li a {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #58A633;
+}
+
+.login-container li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Estilos para el formulario de edición de perfil */
+
+#editarPerfilForm {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  margin: 60px auto; /* Agrega un margen alrededor del formulario */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Ajustado para dispositivos móviles */
+}
+
+#editarPerfilForm label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#imagen {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#imagenPrevia {
+  max-width: 200px;
+  display: none;
+}
+
+#editarPerfilForm .form-group {
+  margin-bottom: 15px;
+}
+
+#editarPerfilForm input[type="text"],
+#editarPerfilForm input[type="number"],
+#editarPerfilForm textarea { /* Estilos para input y textarea */
+  width: 100%; /* Hacemos que todos los campos tengan el mismo ancho */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#editarPerfilForm button[type="submit"] {
+  background: #58A633;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#editarPerfilForm button[type="submit"]:hover {
+  background: #4A8C2B;
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos para dispositivos móviles */
+  .formulario_titulo {
+    font-size: 20px; /* Reduce el tamaño del título en dispositivos móviles */
+  }
+
+  #editarPerfilForm {
+    padding: 15px; /* Reduce el espacio dentro del formulario en dispositivos móviles */
+  }
+
+  .form-group label {
+    font-size: 16px; /* Reduce el tamaño de fuente de las etiquetas en dispositivos móviles */
+  }
+
+  #editarPerfilForm input[type="text"],
+  #editarPerfilForm input[type="number"],
+  #editarPerfilForm textarea {
+    font-size: 14px; /* Reduce el tamaño de fuente en dispositivos móviles */
+  }
+
+  #editarPerfilForm button[type="submit"] {
+    font-size: 16px; /* Reduce el tamaño de fuente del botón en dispositivos móviles */
+  }
+}
+
+
