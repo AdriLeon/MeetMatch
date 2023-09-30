@@ -1,0 +1,51 @@
+{
+  "name": "Meetmatch",
+  "short_name": "Meetmatch",
+  "start_url": "inicio_de_sesion.html",
+  "display": "standalone",
+  "background_color": "#0B1E59",
+  "theme_color": "#58A633",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "static/img/meetmatch.png", 
+      "type": "image/jpeg",
+      "sizes": "72x72"
+    },
+    {
+      "src": "static/img/meetmatch.png",
+      "type": "image/jpeg",
+      "sizes": "96x96"
+    },
+    {
+      "src": "static/img/meetmatch.png",
+      "type": "image/jpeg",
+      "sizes": "128x128"
+    },
+    {
+      "src": "static/img/meetmatch.png",
+      "type": "image/jpeg",
+      "sizes": "144x144"
+    },
+    {
+      "src": "static/img/meetmatch.png",
+      "type": "image/jpeg",
+      "sizes": "152x152"
+    },
+    {
+      "src": "static/img/meetmatch.png",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "static/img/meetmatch.png",
+      "type": "image/jpeg",
+      "sizes": "384x384"
+    },
+    {
+      "src": "static/img/meetmatch.png",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ]
+}
