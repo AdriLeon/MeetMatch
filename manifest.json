@@ -1,7 +1,7 @@
 {
   "name": "Meetmatch",
   "short_name": "Meetmatch",
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0B1E59",
   "theme_color": "#58A633",
